@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swapps://github.com/produle/MockFlowFont/blob/master/MockFlowFont1/dist/MockFlowFont1.woff");
 html,
 body {
   margin: 0px;
@@ -300,4 +301,74 @@ nav img {
 .para p {
   color: #585858;
   font-size: larger;
+}
+
+.division-4-class {
+  margin-top: 6%;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  box-sizing: border-box;
+  width: 100%;
+  height: 90vh;
+  background-color: #000;
+
+  display: grid;
+  place-items: center;
+}
+
+.division-4-class img {
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+.container {
+  max-width: 600px;
+  max-height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin-top: 7%;
+}
+.container:hover img {
+  opacity: 0.3;
+}
+.container img:hover {
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}
+
+.team-name {
+  display: flex;
+  justify-content: center;
+  gap: 39%;
+  color: #06176f;
+}
+
+.team-name h2 {
+  display: flex;
+  justify-content: center;
+  gap: 39%;
+  color: rgb(6, 23, 111);
+  border-bottom: 2px solid black;
+}
+
+.division-4-class strong {
+  font-family: "Raleway";
+  font-size: x-large;
+  border: 2px solid black;
+  border-radius: 24px;
+  padding: 1%;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  color: darkred;
+  margin-top: 2%;
 }
