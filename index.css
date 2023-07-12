@@ -7,6 +7,7 @@ body {
 
 nav {
   display: flex;
+  box-shadow: 0 0.125rem 0.25rem rgb(123 56 50 / 15%);
 }
 
 nav img {
@@ -82,6 +83,7 @@ nav img {
   font-size: medium;
   font-weight: 600;
   border: 1px transparent;
+  cursor: pointer;
 }
 
 #Donate_now {
@@ -89,7 +91,65 @@ nav img {
   background: #cc4b00;
 }
 
+#Donate_now:hover {
+  background: rgb(243, 152, 34);
+}
+
 #login,
 #signup {
   color: #722282;
+}
+
+#login:hover,
+#signup:hover {
+  color: rgb(255, 0, 183);
+  background: rgba(0, 0, 0, 0.971);
+}
+
+.header_page {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.inner {
+  display: flex;
+}
+
+.inner strong {
+  color: #585858;
+  font-family: "Raleway";
+  margin: auto;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: xx-large;
+  margin-top: 21%;
+  margin-left: 13%;
+  font-size: 260%;
+}
+
+.inner strong p {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+.left_container .inner img {
+  width: 47%;
+}
+
+.right_container img {
+  width: 86%;
+  margin-left: 3%;
+}
+
+#appointment {
+  padding: 16px 22px 14px 22px;
+  border-radius: 26px;
+  font-size: 45%;
+  border: 1px transparent;
+  color: white;
+  background: #cc4b00;
+  font-weight: 750;
+  cursor: pointer;
+}
+#appointment:hover {
+  background: rgb(243, 152, 34);
 }
