@@ -125,6 +125,13 @@ input::-moz-focus-inner {
   transition: color 300ms;
   cursor: pointer;
 }
+#submit:hover {
+  color: black;
+  border-radius: 25px;
+  font-size: 136%;
+  font-weight: bolder;
+  cursor: pointer;
+}
 #submit:focus {
   color: #f2f2f2;
 }
