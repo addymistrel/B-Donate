@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+       <div class="donationform">
+        <h1 >Blood Donation Form</h1>
+        <form id="register" method="posts">
+            <label for="name">Name</label>
+            <br/>
+            <input type="text" name="name" id="name" placeholder="Enter Donor Name">
+            <br/>
+            <br/>
+            <label for="DOB">Date Of Birth</label>
+            <br/>
+            <input type="date" name="datepicker" id="DOB" >
+            <br/>
+            <br/>
+            <label for="email">Email</label>
+            <br/>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <br/>
+            <br/>
+            <label for="phone">Phone</label>
+            <br/>
+            <input type="number" name="phone" id="phone" placeholder="Enter Phone Number">
+            <br/>
+            <br/>
+            <label for="address">Address</label>
+            <br/>
+            <input type="text" name="address" id="address" placeholder="Street Address">
+            <br/>
+            <input type="text" name="address" id="address" placeholder="Street Address 2">
+            <br/>
+            <input type="text" name="address" id="address" placeholder="City">
+            <br/>
+            <input type="text" name="address" id="address" placeholder="State">
+            <input type="text" name="address" id="address" placeholder="Country">
+            <br/>
+            <br/>
+            <label>Gender :</label>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gander" id="male">
+            &nbsp;
+            <span id="male">Male</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gander" id="female">
+            &nbsp;
+            <span id="female">Female</span>
+            <br/>
+            <br/>
+            <label for="bloodtype">Blood Type :</label>
+            <br/>
+            <select name="bloodtype" id="bloodtype">
+                <option value=""></option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Did You Ever Donate Blood Before :</label>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="y/n" id="yes">
+            &nbsp;
+            <span id="yes">Yes</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="y/n" id="no">
+            &nbsp;
+            <span id="no">No</span>
+            <br/>
+            <br/>
+            <label>Did You Suffer any Disease :</label>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="y/n" id="yes">
+            &nbsp;
+            <span id="yes">Yes</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="y/n" id="no">
+            &nbsp;
+            <span id="no">No</span>
+            <br/><br/>
+            <button id="submit">
+                Submit
+            </button>
+        </form>
+
+       </div><!--end of form-->
+    </div><!--end of main-->
+</body>
+</html>
