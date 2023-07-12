@@ -1,4 +1,7 @@
 @import url("https://rsms.me/inter/inter-ui.css");
+* {
+  background-image: url(../../assets/images/background.png);
+}
 ::selection {
   background: #2d2f36;
 }
