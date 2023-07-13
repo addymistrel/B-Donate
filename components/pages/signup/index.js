@@ -40,15 +40,28 @@ submit.addEventListener("click", () => {
     );
   } else {
     fetch("http://localhost:8080/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(user_data),
+      method: "GET",
     })
       .then((res) => res.json())
-      .then(() => {
-        alert("Registration SuccessFull! Please Proceed to Login");
+      .then((data) => {
+        const item = data.find((el) => el.email === email.value);
+        if (item === undefined) {
+          fetch("http://localhost:8080/users", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user_data),
+          })
+            .then((res) => res.json())
+            .then(() => {
+              alert("Registration SuccessFull! Please Proceed to Login");
+            });
+        } else {
+          alert(
+            "User Already Exist!\nPlease Login or \nCreate account with another email !"
+          );
+        }
       });
   }
 });
