@@ -33,7 +33,7 @@ submit.addEventListener("click", () => {
       "! Reminder\n --> All Fields are mandatory\n--> Email should be valid\n--> Password length should not be less than 6"
     );
   } else {
-    fetch("http://localhost:8080/users", {
+    fetch("http://localhost:5500/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,6 +43,7 @@ submit.addEventListener("click", () => {
       .then((res) => res.json())
       .then(() => {
         alert("Registration SuccessFull! Please Proceed to Login");
+        //window.location.replace('../../../index.html');
       });
   }
 });
