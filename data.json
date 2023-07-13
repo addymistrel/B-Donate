@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "Aditya Kumar Dutta",
+      "email": "addymistrel@gmail.com",
+      "password": "123456",
+      "blood": "A",
+      "rh": "pos",
+      "address": "SIT",
+      "image_url": "C:\\fakepath\\aditya.png",
+      "id": 1
+    }
+  ]
+}
