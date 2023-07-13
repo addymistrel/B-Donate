@@ -107,6 +107,12 @@ nav {
   color: rgb(255, 0, 183);
   background: rgba(0, 0, 0, 0.971);
 }
+.content-page {
+  margin-top: 1%;
+}
+.content-page div {
+  gap: 5%;
+}
 .div1 {
   display: flex;
   flex-direction: row;
@@ -127,6 +133,7 @@ nav {
   margin-left: 16.5%;
   margin-right: 20%;
   margin-top: -0.2%;
+  font-size: -20%;
 }
 .div3 p {
   font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
@@ -138,19 +145,35 @@ nav {
 }
 .division2 {
   border: none;
-  background-color: #cc4b00;
-  margin-left: 16.5%;
-  margin-right: 55%;
-  margin-top: -0.2%;
+  margin-left: 15%;
+  margin-right: 12%;
+  margin-top: 4%;
   font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: large;
   border-radius: 5%;
-  width: 20%;
-  height: 70%;
-  color: aliceblue;
   text-align: center;
-  padding-bottom: 2%;
+  color: #585858;
+}
+#loc_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#loc_div div {
+  padding: 5%;
+  border: none;
+  font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  border-radius: 5%;
+  margin: 2%;
+}
+#loc_div div:hover {
+  cursor: pointer;
+}
+#loc_div p {
+  color: black;
+  font-weight: bold;
 }
 #child_div4 {
   display: block;
@@ -166,6 +189,9 @@ nav {
   background-repeat: repeat !important;
   width: 50%;
   padding-bottom: 20%;
+}
+.division3 {
+  margin-top: 10%;
 }
 #child_div4 h2 {
   margin: 0 0 4rem 0;
@@ -185,6 +211,36 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 124%;
-  left: 25%;
+  top: 170%;
+  left: 23.5%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #3d3f42;
+  font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  position: absolute;
+  top: 240%;
+  padding-right: 70%;
+}
+.github,
+.linkedin,
+.instagram {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkedin span {
+  color: #06176fbb;
+}
+.instagram span {
+  color: rgba(227, 10, 115, 0.733);
+}
+.svg {
+  width: 30px;
+  margin-right: 10px;
 }
