@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <nav>
+      <div>
+        <a href="index.html">
+          <img src="../../assets/images/logo.png" class="nav-img" alt="Error" />
+        </a>
+      </div>
+      <div class="nav_container">
+        <div class="borderCSS">
+          <a>HOME</a>
+          <a>ARTICLES</a>
+          <a>PORTFOLIO</a>
+          <a>ABOUT</a>
+          <a>CONTACT</a>
+        </div>
+      </div>
+      <div class="tools">
+        <a href="../Donation_Form/index.html" id="Donate_now"
+          ><button>DONATE NOW</button></a
+        >
+        <a href="../signin/index.html" id="login"><button>LOGIN</button></a>
+        <a href="./index.html" id="signup"><button>SIGNUP</button></a>
+      </div>
+    </nav>
     <div class="page">
       <div class="container">
         <div class="left">
@@ -32,7 +55,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <div class="form">
+          <div class="form" id="signup-form">
             <div class="remain">
               <label for="email">Email</label>
               <input type="email" id="email" />
@@ -61,6 +84,7 @@
             </div>
             <input type="submit" id="submit" value="Register" />
           </div>
+          <div id="final_reference_div"></div>
         </div>
       </div>
     </div>
