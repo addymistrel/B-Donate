@@ -74,9 +74,9 @@ body {
   box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
   color: #f1f1f2;
   position: relative;
-  width: 56%;
-  height: 153%;
-  margin-top: -11%;
+  width: 60%;
+  height: 167%;
+  margin-top: -16%;
 }
 @media (max-width: 767px) {
   .right {
@@ -125,7 +125,7 @@ input::-moz-focus-inner {
   color: black;
   transition: color 300ms;
   border-radius: 25px;
-  margin-top: 2%;
+  margin-top: 9%;
   font-size: 136%;
   font-weight: bolder;
   background-image: radial-gradient(
@@ -273,4 +273,16 @@ nav img {
 }
 .red-star {
   color: red;
+}
+
+#images {
+  display: block;
+  padding: 0%;
+  width: 91%;
+  margin-top: 8%;
+  font-size: 89%;
+}
+
+.image-block {
+  display: flex;
 }
