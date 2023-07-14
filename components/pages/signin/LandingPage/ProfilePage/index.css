@@ -1,0 +1,123 @@
+
+@import "https://fonts.googleapis.com/css?family=Raleway";
+.main .image-div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main .image-div img{
+    width: 1250px;
+    height: 625px;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+}
+.main{
+    position: relative;
+}
+.main .content{
+    position: absolute;
+    z-index: 1;
+}
+.main .content .heading{
+    width: 1515px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway";
+    color:rgba(0, 0, 0, 0.639);
+}
+.underline{
+    border-bottom: 2px solid black;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    margin-top: 87px;
+    margin-left:300px;
+    border-radius: 20px;;
+}
+
+#datadiv{
+   
+    width: 1515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+}
+#datadiv .upper .profile-image img{
+    width:250px;
+    height:250px;
+    border-radius: 5px ;
+    margin-right:50px;
+    margin-left: 155px;
+}
+#datadiv .upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 7rem;
+    margin-left:-200px;
+}
+
+#datadiv .upper .display-name span{
+    font-size: 80px;
+    font-family: "Raleway";
+    font-weight:bolder;
+    color:rgba(0, 0, 0, 0.655);
+}
+#datadiv .upper .display-blood {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+#datadiv .upper .display-blood .blood-heading{
+    font-size:15px;
+    font-family: "Raleway";
+    font-weight:bolder;
+}
+
+#datadiv .upper .display-blood .blood-type{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Raleway";
+    font-weight:bolder;
+    color:rgb(255, 0, 0);
+}
+#datadiv .middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 7rem;
+    margin-left:-200px;
+}
+#datadiv .middle .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:-200px;
+    padding-left: 180px;
+}
+#datadiv .middle .about .email ,
+#datadiv .middle .about .address {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding-top: 30px;
+}
+
+#datadiv .middle .about .about-query{
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.658);
+}
+#datadiv .middle .about .about-result{
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.854);
+}
