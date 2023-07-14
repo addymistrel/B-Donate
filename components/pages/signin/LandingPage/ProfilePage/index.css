@@ -65,7 +65,7 @@
 }
 
 #datadiv .upper .display-name span{
-    font-size: 80px;
+    font-size: 60px;
     font-family: "Raleway";
     font-weight:bolder;
     color:rgba(0, 0, 0, 0.655);
@@ -95,14 +95,13 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 7rem;
-    margin-left:-200px;
+    
 }
 #datadiv .middle .about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:-200px;
-    padding-left: 180px;
+    margin-top:50x;
 }
 #datadiv .middle .about .email ,
 #datadiv .middle .about .address {
