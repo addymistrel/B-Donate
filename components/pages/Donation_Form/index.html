@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../index.css" type="text/css" />
   </head>
   <body>
+    <script src="./access.js"></script>
     <nav class="donationform-nav">
       <div>
         <a href="../../../index.html">
@@ -18,17 +19,21 @@
         <div class="borderCSS">
           <a href="../../../index.html#nav">HOME</a>
           <a href="../../../index.html#division-2">ARTICLES</a>
-          <a href="../../../index.html#division-3">PORTFOLIO</a>
-          <a href="../../../index.html#division-4">ABOUT</a>
-          <a href="../../../index.html#division-5">CONTACT</a>
+          <a href="../../../index.html#division-3">SUMMARY</a>
+          <a href="../../../index.html#division-4">TEAM</a>
+          <a href="../../../index.html#division-5">ABOUT</a>
         </div>
       </div>
       <div class="tools">
-        <a href="../Donation_Form/index.html" id="Donate_now"
-          ><button>DONATE NOW</button></a
+        <a href="../signin/LandingPage/index.html" id="Donate_now"
+          ><button id="usr-details">USER DETAILS</button></a
         >
-        <a href="../signin/index.html" id="login"><button>LOGIN</button></a>
-        <a href="./index.html" id="signup"><button>SIGNUP</button></a>
+        <a href="../signin/LandingPage/ProfilePage/index.html" id="login"
+          ><button>PROFILE</button></a
+        >
+        <a href="../../../index.html" id="sign-out"
+          ><button>SIGN OUT</button></a
+        >
       </div>
     </nav>
     <div class="main">
@@ -93,34 +98,29 @@
                 class="address-line-1"
                 type="text"
                 name="address"
-                id="address"
+                id="address1"
                 placeholder="Address Line 1"
               />
               <input
                 class="address-line-2"
                 type="text"
                 name="address"
-                id="address"
+                id="address2"
                 placeholder="Address Line 2"
               />
             </div>
             <div class="address-div-2">
+              <input type="text" name="address" id="city" placeholder="City" />
               <input
                 type="text"
                 name="address"
-                id="address"
-                placeholder="City"
-              />
-              <input
-                type="text"
-                name="address"
-                id="address"
+                id="state"
                 placeholder="State"
               />
               <input
                 type="text"
                 name="address"
-                id="address"
+                id="country"
                 placeholder="Country"
               />
             </div>
@@ -180,5 +180,6 @@
       <!--end of form-->
     </div>
     <!--end of main-->
+    <script src="./index.js"></script>
   </body>
 </html>

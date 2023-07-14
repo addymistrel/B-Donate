@@ -51,6 +51,8 @@ document.querySelector("#submit").addEventListener("focus", function (e) {
 const email = document.getElementById("email");
 const pass = document.getElementById("password");
 const submit = document.getElementById("submit");
+const red = JSON.parse(localStorage.getItem("redirect"));
+const redirect = JSON.stringify(Date.now());
 
 submit.addEventListener("click", () => {
   localStorage.removeItem("token");
@@ -73,8 +75,15 @@ submit.addEventListener("click", () => {
           const token = JSON.stringify(Date.now());
           localStorage.setItem("token", token);
           localStorage.setItem("id", item.id);
-          window.location.href = "./LandingPage/index.html";
+          if (red) {
+            window.location.replace("../Donation_Form/index.html");
+            localStorage.removeItem("redirect");
+          } else window.location.href = "./LandingPage/index.html";
         }
       });
   }
+});
+
+document.getElementById("donate").addEventListener("click", () => {
+  localStorage.setItem("redirect", redirect);
 });

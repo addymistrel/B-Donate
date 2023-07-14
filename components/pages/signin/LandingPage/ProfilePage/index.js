@@ -80,5 +80,5 @@ async function showDetails() {
 if (token) showDetails();
 else {
   alert("Please Login first to Move on !");
-  window.location.href = "../index.html";
+  window.location.href = "../../index.html";
 }
