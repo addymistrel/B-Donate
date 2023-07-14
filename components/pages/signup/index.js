@@ -14,8 +14,18 @@ function isEmail(eemail) {
   return false;
 }
 
+let url11 = "";
+ppic.addEventListener("change", () => {
+  const fr = new FileReader();
+  fr.readAsDataURL(ppic.files[0]);
+  fr.addEventListener("load", () => {
+    url11 = fr.result;
+  });
+});
+
 submit.addEventListener("click", () => {
-  console.log(ppic.value);
+  // console.log(ppic.value);
+  // console.log(url11);
   const user_data = {
     name: uname.value,
     email: email.value,
@@ -26,7 +36,7 @@ submit.addEventListener("click", () => {
     image_url:
       ppic.value.length === 0
         ? "../../assets/images/demo_profile_pic.png"
-        : ppic.value,
+        : url11,
   };
 
   if (
