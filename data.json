@@ -19,6 +19,16 @@
       "address": "hskldmc,lcl;d;ss",
       "image_url": "C:\\fakepath\\png-transparent-blue-and-white-multilayer-technology-background-blue-hexagons-blue-and-white-honey-bee-blue-angle-thumbnail.png",
       "id": 2
+    },
+    {
+      "name": "Abhinav",
+      "email": "kittusinghranchi@gmail.com",
+      "password": "abhinavsingh",
+      "blood": "B",
+      "rh": "pos",
+      "address": "Kolkata",
+      "image_url": "../../assets/images/demo_profile_pic.png",
+      "id": 3
     }
   ]
 }
