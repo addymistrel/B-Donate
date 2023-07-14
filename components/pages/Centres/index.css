@@ -110,9 +110,6 @@ nav {
 .content-page {
   margin-top: 1%;
 }
-/* .content-page div {
-  gap: 5%;
-} */
 .div1 {
   display: grid;
   gap: 4%;
@@ -237,40 +234,6 @@ nav {
   top: 170%;
   left: 23.5%;
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  font-size: 2rem;
-  background-color: #3d3f42;
-  font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  position: absolute;
-  top: 240%;
-  padding-right: 70%;
-}
-.github,
-.linkedin,
-.instagram {
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.linkedin span {
-  color: #06176fbb;
-}
-.instagram span {
-  color: rgba(227, 10, 115, 0.733);
-}
-.svg {
-  width: 30px;
-  margin-right: 10px;
-}
-
-/* #child-div1 {
-  display: grid;
-} */
 
 #loc_div a {
   text-decoration: none;
@@ -354,16 +317,6 @@ nav {
   width: 30px;
   margin-right: 10px;
 }
-.footer {
-  display: flex;
-  color: #cc9c00;
-  justify-content: center;
-  background-color: #000000e6;
-  font-family: "Raleway";
-  font-weight: bolder;
-  font-size: 20px;
-}
-
 #child_div5 iframe {
   width: 243%;
   position: relative;
@@ -379,4 +332,9 @@ nav {
   border-left: 7px solid black;
   border-right: 7px solid black;
   background: cornsilk;
+}
+.heading {
+  border: none;
+  width: 50%;
+  margin-left: 22%;
 }

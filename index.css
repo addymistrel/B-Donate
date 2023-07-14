@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swapps://github.com/produle/MockFlowFont/blob/master/MockFlowFont1/dist/MockFlowFont1.woff");
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,7 +13,6 @@ body {
 nav {
   display: flex;
   box-shadow: 0 0.125rem 0.25rem rgb(123 56 50 / 15%);
-  
 }
 
 nav img {
@@ -308,18 +307,16 @@ nav img {
   font-size: larger;
 }
 
-
 .division-4-class {
   margin-top: 6%;
-  background-image: url('./components/assets/images/teambg.png');
-  
+  background-image: url("./components/assets/images/teambg.png");
+
   box-sizing: border-box;
   width: 100%;
   height: 90vh;
-  
+
   display: grid;
   place-items: center;
-
 }
 
 .division-4-class img {
@@ -367,14 +364,13 @@ nav img {
   padding-bottom: 5px;
   border-radius: 10px;
   font-family: "Raleway";
-
 }
 
 .division-4-class strong {
   font-family: "Raleway";
   font-size: x-large;
   border-left: 4px solid black;
-  border-bottom: 4px solid red;;
+  border-bottom: 4px solid red;
   border-radius: 24px;
   padding: 1%;
   background-color: #fbab7e;
@@ -385,13 +381,13 @@ nav img {
 #division-5 {
   background-color: rgba(143, 133, 133, 0.253);
 }
-.division-five{
+.division-five {
   display: flex;
   flex-direction: column;
-  height:450px;
+  height: 450px;
 }
-.division-five .heading{
-  display:flex;
+.division-five .heading {
+  display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 60px;
@@ -400,18 +396,22 @@ nav img {
   font-family: "Raleway";
   color: #000000a7;
 }
-.about-section{
+.about-section {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 33% 33% 33%;
 }
-.github , .linkedin, .instagram{
+.github,
+.linkedin,
+.instagram {
   width: 400px;
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.github a, .linkedin a, .instagram a{
+.github a,
+.linkedin a,
+.instagram a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
@@ -420,9 +420,10 @@ nav img {
   padding-left: 10px;
   display: flex;
   justify-content: center;
-  
 }
-.github span, .linkedin span, .instagram span{
+.github span,
+.linkedin span,
+.instagram span {
   font-size: 30px;
   margin: 0px;
   font-family: "Raleway";
@@ -430,24 +431,23 @@ nav img {
   padding: 15px;
   display: flex;
   justify-content: center;
-
 }
-.linkedin span{
-  color:#06176fbb
+.linkedin span {
+  color: #06176fbb;
 }
-.instagram span{
-  color:rgba(227, 10, 115, 0.733)
+.instagram span {
+  color: rgba(227, 10, 115, 0.733);
 }
-.svg{
-  width:30px;
+.svg {
+  width: 30px;
   margin-right: 10px;
 }
-.footer{
-  display:flex;
-  color:#cc9c00;
+.footer {
+  display: flex;
+  color: #cc9c00;
   justify-content: center;
   background-color: #000000e6;
   font-family: "Raleway";
   font-weight: bolder;
-  font-size:20px;
+  font-size: 20px;
 }
