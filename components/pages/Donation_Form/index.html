@@ -1,87 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blood Donation Form</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href ='../../../index.css' type="text/css">
-</head>
-<body>
-    <nav>
-        <div>
-          <a href="../../../index.html">
-            <img src="../../assets/images/logo.png" class="nav-img" alt="Error" />
-          </a>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="../../../index.css" type="text/css" />
+  </head>
+  <body>
+    <nav class="donationform-nav">
+      <div>
+        <a href="../../../index.html">
+          <img src="../../assets/images/logo.png" class="nav-img" alt="Error" />
+        </a>
+      </div>
+      <div class="nav_container">
+        <div class="borderCSS">
+          <a href="../../../index.html">HOME</a>
+          <a href="../../../index.html">ARTICLES</a>
+          <a href="../../../index.html">PORTFOLIO</a>
+          <a href="../../../index.html">ABOUT</a>
+          <a href="../../../index.html">CONTACT</a>
         </div>
-        <div class="nav_container">
-          <div class="borderCSS">
-            <a href="../../../index.html">HOME</a>
-            <a href="../../../index.html">ARTICLES</a>
-            <a href="../../../index.html">PORTFOLIO</a>
-            <a href="../../../index.html">ABOUT</a>
-            <a href="../../../index.html">CONTACT</a>
-          </div>
-        </div>
-        <div class="tools">
-          <a href="../Donation_Form/index.html" id="Donate_now"
-            ><button>DONATE NOW</button></a
-          >
-          <a href="../signin/index.html" id="login"><button>LOGIN</button></a>
-          <a href="./index.html" id="signup"><button>SIGNUP</button></a>
-        </div>
+      </div>
+      <div class="tools">
+        <a href="../Donation_Form/index.html" id="Donate_now"
+          ><button>DONATE NOW</button></a
+        >
+        <a href="../signin/index.html" id="login"><button>LOGIN</button></a>
+        <a href="./index.html" id="signup"><button>SIGNUP</button></a>
+      </div>
     </nav>
     <div class="main">
-       <div class="donationform">
-        <h1 >Blood Donation Form</h1>
+      <div class="donationform">
+        <h1>Blood Donation Form</h1>
         <form id="register" method="posts">
-            <label for="name">Name</label>
-            <br/>
-            <input type="text" name="name" id="name" placeholder="Enter Donor Name">
-            <br/>
-            <br/>
-            <label for="DOB">Date Of Birth</label>
-            <br/>
-            <input type="date" name="datepicker" id="DOB" >
-            <br/>
-            <br/>
-            <label for="email">Email</label>
-            <br/>
-            <input type="email" name="email" id="email" placeholder="Enter Email">
-            <br/>
-            <br/>
-            <label for="phone">Phone</label>
-            <br/>
-            <input type="number" name="phone" id="phone" placeholder="Enter Phone Number">
-            <br/>
-            <br/>
-            <label for="address">Address</label>
-            <br/>
-            <input type="text" name="address" id="address" placeholder="Street Address">
-            <br/>
-            <input type="text" name="address" id="address" placeholder="Street Address 2">
-            <br/>
-            <input type="text" name="address" id="address" placeholder="City">
-            <br/>
-            <input type="text" name="address" id="address" placeholder="State">
-            <input type="text" name="address" id="address" placeholder="Country">
-            <br/>
-            <br/>
-            <label>Gender :</label>
-            <br/>
-            &nbsp;&nbsp;&nbsp;
-            <input type="radio" name="gander" id="male">
-            &nbsp;
-            <span id="male">Male</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="gander" id="female">
-            &nbsp;
-            <span id="female">Female</span>
-            <br/>
-            <br/>
-            <label for="bloodtype">Blood Type :</label>
-            <br/>
-            <select name="bloodtype" id="bloodtype">
+          <div class="name-dob">
+            <div class="name">
+              <label class="name" for="name">Name</label>
+              <br />
+              <input
+                class="name-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=""
+              />
+              <br />
+              <br />
+            </div>
+            <div class="dob">
+              <label for="DOB">Date Of Birth</label>
+              <br />
+              <input type="date" name="datepicker" id="DOB" />
+              <br />
+            </div>
+            <div class="bloodtype">
+              <label for="bloodtype">Blood Type :</label>
+              <br />
+              <select name="bloodtype" id="bloodtype">
                 <option value=""></option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
@@ -91,42 +68,132 @@
                 <option value="AB-">AB-</option>
                 <option value="O+">O+</option>
                 <option value="O-">O-</option>
-            </select>
-            <br/>
-            <br/>
-            <div>
-            <label>Did You Ever Donate Blood Before :</label>
-            <br/>
-            &nbsp;&nbsp;&nbsp;
-            <input type="radio" name="y/n" id="yes">
-            &nbsp;
-            <span id="yes">Yes</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="y/n" id="no">
-            &nbsp;
-            <span id="no">No</span>
-            <br/>
-            <br/>
+              </select>
             </div>
-            <div>
-            <label>Did You Suffer any Disease :</label>
-            <br/>
-            &nbsp;&nbsp;&nbsp;
-            <input type="radio" name="y/n1" id="yes1">
-            &nbsp;
-            <span id="yes1">Yes</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="y/n1" id="no1">
-            &nbsp;
-            <span id="no1">No</span>
-            <br/><br/>
+          </div>
+          <div class="email-phone">
+            <div class="email">
+              <label for="email">Email</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=""
+              />
             </div>
-            <button id="submit">
-                Submit
-            </button>
-        </form>
+            <div class="phone">
+              <label for="phone">Phone</label>
+              <br />
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder=""
+              />
+            </div>
+          </div>
 
-       </div><!--end of form-->
-    </div><!--end of main-->
-</body>
+          <div class="address-div">
+            <div class="address-heading">
+              <label for="address">Address</label>
+            </div>
+            <div class="address-div-1">
+              <input
+                class="address-line-1"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Address Line 1"
+              />
+              <input
+                class="address-line-2"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Address Line 2"
+              />
+            </div>
+            <div class="address-div-2">
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="City"
+              />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="State"
+              />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Country"
+              />
+            </div>
+          </div>
+
+          <div class="radio">
+            <div class="gender">
+              <label>Gender :</label>
+              <div class="option">
+              <div class="option-div">
+                <input type="radio" name="gander" id="male" />
+              <span id="male">Male</span>
+              </div>
+              <div class="option-div">
+                <input type="radio" name="gander" id="female" />
+              <span id="female">Female</span>
+              </div>
+              
+              </div>
+              
+            </div>
+
+            <div class="donate-before">
+              <label>Did You Ever Donate <br/>
+                Blood Before :</label>
+              <div class="option">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="y/n" id="yes" />
+              <span id="yes">Yes</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="y/n" id="no" />
+              <span id="no">No</span>
+              
+              
+              </div>
+            </div>
+
+            <div class="disease">
+              <label>Did You Suffer any<br/>
+                Disease :</label>
+              <div class="option">
+                &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="y/n1" id="yes1" />
+              &nbsp;
+              <span id="yes1">Yes</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="y/n1" id="no1" />
+              &nbsp;
+              <span id="no1">No</span>
+              </div>
+              
+            </div>
+
+          </div>
+          
+
+          
+          
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+      <!--end of form-->
+    </div>
+    <!--end of main-->
+  </body>
 </html>

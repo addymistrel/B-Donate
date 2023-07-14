@@ -35,13 +35,13 @@ async function showDetails() {
               .map(
                 (posts) =>
                   `<tr>
-                    <td>${posts.name}</td>
-                    <td>${posts.blood.concat(
+                    <td class="name">${posts.name}</td>
+                    <td class="blood">${posts.blood.concat(
                       " ",
                       posts.rh == "pos" ? "+" : "-"
                     )}</td>
-                    <td>${posts.email}</td>
-                    <td id="details-more"><button class=${
+                    <td class="contact">${posts.email}</td>
+                    <td class = "more-details" id="details-more"><button class=${
                       posts.id !== id ? "disabled" : "enabled"
                     }><a href = "./ProfilePage/index.html"> 
                     More Details</a></button></td>
