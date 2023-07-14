@@ -32,17 +32,7 @@ async function showDetails() {
                 </div>
                 <div class="display-name">
                     <span>${name}</span>
-                </div>
-                <div class="display-blood">
-                    <span class="blood-heading">Blood Group</span>    
-                    <span class="blood-type">${blood.concat(
-                      " ",
-                      rh == "pos" ? "+" : "-"
-                    )}
-                    </span>
-                </div>
-                </div>
-                <div class="middle">
+                    <div class="middle">
                     <div class="about">
                         <div class="email">
                         <span class="about-query">
@@ -60,6 +50,17 @@ async function showDetails() {
 
                 </div>
             </div>
+                </div>
+                <div class="display-blood">
+                    <span class="blood-heading">Blood Group</span>    
+                    <span class="blood-type">${blood.concat(
+                      " ",
+                      rh == "pos" ? "+" : "-"
+                    )}
+                    </span>
+                </div>
+                </div>
+                
                 
             
 
