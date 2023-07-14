@@ -72,7 +72,8 @@ submit.addEventListener("click", () => {
         } else {
           const token = JSON.stringify(Date.now());
           localStorage.setItem("token", token);
-          window.location.href = "https://www.google.co.in";
+          localStorage.setItem("id", item.id);
+          window.location.href = "./LandingPage/index.html";
         }
       });
   }
