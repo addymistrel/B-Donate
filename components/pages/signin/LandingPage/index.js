@@ -9,7 +9,7 @@ const getDetails = async () => {
   console.log(id);
   const response = await fetch(url);
   const posts = await response.json();
-  //   console.log(posts);
+  console.log(posts);
   return posts;
 };
 //Working with data
@@ -18,7 +18,7 @@ async function showDetails() {
   console.log(posts);
   if (posts) {
     //posts.forEach(element => {
-    console.log(posts[0].id);
+    //console.log(posts[0].id);
     //const html=`${element.id}<br/>`;
     //document.querySelector('#details');//insertAdjacentHTML("beforeend",html)
     const table = `<table class="table">
