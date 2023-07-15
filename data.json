@@ -115,6 +115,24 @@
       "donated": "No",
       "disease": "No",
       "id": 3
+    },
+    {
+      "name": "Aditya Kumar Dutta",
+      "dob": "2023-07-13",
+      "bloodtype": "A-",
+      "email": "addymistrel@gmail.com",
+      "phone": "7458961234",
+      "address": {
+        "address1": "SIT",
+        "address2": "Bhubaneswar",
+        "city": "Khordha",
+        "state": "Odisha",
+        "country": "India"
+      },
+      "gender": "Male",
+      "donated": "Yes",
+      "disease": "Yes",
+      "id": 4
     }
   ]
 }

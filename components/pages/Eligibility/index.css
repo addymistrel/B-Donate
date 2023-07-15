@@ -113,32 +113,9 @@ body {
 }
 
 .main {
-  padding: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: large;
-}
-
-h1,
-h2,
-h3 {
-  animation: colorChange 3s infinite alternate;
-}
-
-@keyframes colorChange {
-  0% {
-    color: rgb(2, 5, 28);
-  }
-  50% {
-    color: rgb(20, 78, 20);
-  }
-  100% {
-    color: rgb(10, 91, 149);
-  }
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4%;
 }
 
 .content__description {
@@ -158,24 +135,7 @@ h3 {
   font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.BasicRequirements {
-  background-image: linear-gradient(
-    to right,
-    rgba(245, 106, 14, 0),
-    rgb(255, 204, 0)
-  );
-}
-.basic {
-  margin-top: 2%;
-  font-family: "Filson Pro", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-image: linear-gradient(#d1c40900, #df8612);
-  padding-top: 1%;
-  padding-right: 2%;
-  padding-left: 2%;
-  padding-bottom: 2%;
-  border-radius: 10%;
-}
+
 .basic img {
   height: 80px;
   position: absolute;
@@ -193,4 +153,125 @@ summary {
 }
 #image {
   size: 0px;
+}
+
+.bg img {
+  width: 50%;
+}
+
+.bg {
+  display: flex;
+}
+
+.card {
+  border-right: 7px solid gray;
+  margin-left: 11%;
+  margin-top: 11%;
+  margin-right: 8%;
+  padding: 4% 5% 4% 7%;
+  border-bottom: 7px solid red;
+  border-radius: 20%;
+  background: black;
+}
+
+.card h1 {
+  font-family: "Raleway";
+  color: blueviolet;
+  font-size: xxx-large;
+  font-weight: 700;
+}
+
+.card p {
+  font-family: "Raleway";
+  color: aqua;
+  font-size: larger;
+  font-weight: 500;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  30% {
+    transform: translate(-1px, -2px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(-3px, 0px) rotate(0deg);
+  }
+  90% {
+    transform: translate(3px, 2px) rotate(5deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(0deg);
+  }
+}
+
+.card:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+
+.BasicRequirements {
+  background: aquamarine;
+  margin-left: 8%;
+  border-left: 7px solid black;
+  border-bottom: 7px solid red;
+  border-radius: 28%;
+  padding: 6% 7% 11% 6%;
+  font-family: "Raleway";
+  margin-right: 13%;
+}
+
+.BasicRequirements h2 {
+  color: red;
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+
+.BasicRequirements li {
+  list-style-type: disclosure-closed;
+  padding: 1%;
+  font-size: larger;
+  color: #173ca4;
+  font-weight: bold;
+}
+
+.basic {
+  border-right: 7px solid rgb(0, 0, 0);
+  margin-left: -11%;
+  margin-right: 8%;
+  padding: 6% 7% 11% 6%;
+  border-bottom: 7px solid red;
+  border-radius: 20%;
+  background: rgb(175, 171, 171);
+  font-family: "Raleway";
+  margin-bottom: 5%;
+}
+
+.basic h2 {
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+.basic summary {
+  font-size: larger;
+  color: brown;
+  font-weight: 800;
+  padding: 3%;
+}
+
+.basic summary:hover {
+  color: white;
+}
+
+.card:hover,
+.BasicRequirements:hover,
+.basic:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+
+.final {
+  background-image: url("../../assets/images/eligibility_bg.png");
+  background-size: 64%;
 }
