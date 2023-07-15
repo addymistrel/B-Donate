@@ -12,8 +12,8 @@
 
 ## Step - 3
 
-### Run - npm run server
+### Run - json-server --watch data.json --port 8080
 
 ## Step - 4
 
-### Open index.html
+### Open index.html with live server
