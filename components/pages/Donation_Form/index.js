@@ -1,18 +1,18 @@
 function tellGender() {
-  if (document.getElementById("male").checked) return "male";
-  else if (document.getElementById("female").checked) return "female";
+  if (document.getElementById("male").checked) return "Male";
+  else if (document.getElementById("female").checked) return "Female";
   else return "no_input";
 }
 
 function isDonated() {
-  if (document.getElementById("yes").checked) return "yes";
-  else if (document.getElementById("no").checked) return "no";
+  if (document.getElementById("yes").checked) return "Yes";
+  else if (document.getElementById("no").checked) return "No";
   else return "no_input";
 }
 
 function isDisease() {
-  if (document.getElementById("yes1").checked) return "yes";
-  else if (document.getElementById("no1").checked) return "no";
+  if (document.getElementById("yes1").checked) return "Yes";
+  else if (document.getElementById("no1").checked) return "No";
   else return "no_input";
 }
 
