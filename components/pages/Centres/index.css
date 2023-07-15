@@ -235,6 +235,10 @@ nav {
   left: 23.5%;
 }
 
+#child_div5 {
+  margin-top:-80px;
+  margin-left: 20px;;
+}
 #loc_div a {
   text-decoration: none;
   color: saddlebrown;
@@ -255,6 +259,7 @@ nav {
 
 #division-5 {
   background-color: rgba(143, 133, 133, 0.253);
+  margin-top: -100px;;
 }
 .division-five {
   display: flex;
