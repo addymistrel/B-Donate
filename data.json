@@ -91,6 +91,7 @@
       "id": 1
     },
     {
+<<<<<<< HEAD
       "name": "ashu",
       "dob": "2003-04-20",
       "bloodtype": "B+",
@@ -107,6 +108,60 @@
       "donated": "no",
       "disease": "no",
       "id": 2
+=======
+      "name": "Kittu Singh ",
+      "dob": "2004-12-10",
+      "bloodtype": "B+",
+      "email": "kittusinghranchi@gmail.com",
+      "phone": "7003475639",
+      "address": {
+        "address1": "ff",
+        "address2": "ff",
+        "city": "ff",
+        "state": "ff",
+        "country": "ff"
+      },
+      "gender": "Male",
+      "donated": "Yes",
+      "disease": "No",
+      "id": 2
+    },
+    {
+      "name": "hi",
+      "dob": "1100-01-10",
+      "bloodtype": "B+",
+      "email": "kittusinghranchi@gmail.com",
+      "phone": "7003475639",
+      "address": {
+        "address1": "xdazx",
+        "address2": "dsads",
+        "city": "dsadasd",
+        "state": "dasdsada",
+        "country": "sadasd"
+      },
+      "gender": "Male",
+      "donated": "No",
+      "disease": "No",
+      "id": 3
+    },
+    {
+      "name": "xyz",
+      "dob": "2004-02-10",
+      "bloodtype": "B+",
+      "email": "kittusinghranchi@gmail.com",
+      "phone": "7003475639",
+      "address": {
+        "address1": "asas",
+        "address2": "aas",
+        "city": "sasa",
+        "state": "sasas",
+        "country": "sasa"
+      },
+      "gender": "Male",
+      "donated": "No",
+      "disease": "No",
+      "id": 4
+>>>>>>> fd3f136907d2a3abe9ef352cbfe9ed984e3d5d71
     }
   ]
 }
