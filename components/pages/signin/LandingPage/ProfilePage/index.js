@@ -1,23 +1,32 @@
 const token = JSON.parse(localStorage.getItem("token"));
 const url = "http://localhost:8080/users";
 const Localid = JSON.parse(localStorage.getItem("id"));
+const url2 = "http://localhost:8080/donation_form";
 
 //Extracting data from Api
 const getDetails = async () => {
   //console.log(id);
   const response = await fetch(url);
   const posts = await response.json();
-  console.log(posts);
+  //console.log(posts);
   return posts;
+};
+
+const getDonationDetails = async () => {
+  console.log(Localid);
+  const response = await fetch(url2);
+  const posts2 = await response.json();
+  //console.log(posts2);
+  return posts2;
 };
 
 //Working with data
 async function showDetails() {
   const posts = await getDetails();
-  console.log(posts);
+  //console.log(posts);
   for (var i = 0; i < posts.length; i++) {
     if (posts[i].id === Localid) {
-      console.log(posts[i].id);
+      //console.log(posts[i].id);
       const name = posts[i].name;
       const email = posts[i].email;
       const blood = posts[i].blood;
@@ -69,16 +78,120 @@ async function showDetails() {
       document.querySelector("#datadiv").innerHTML = content;
     }
   }
-  if (posts) {
-    //posts.forEach(element => {
-    //console.log(posts[0].id);
-    //const html=`${element.id}<br/>`;
-    //document.querySelector('#details');//insertAdjacentHTML("beforeend",html)
+}
+
+async function showDonationDetails() {
+  const posts2 = await getDonationDetails();
+
+  const posts = await getDetails();
+  var GlobalEmail="";
+  for (var i = 0; i < posts.length; i++) {
+    if (posts[i].id === Localid) {
+      const email = posts[i].email;
+      //console.log(email);
+      GlobalEmail=email;
+      
+    }
+  }
+  
+  for (var i = 0; i < posts2.length; i++) {
+    if (posts2[i].email === GlobalEmail) {
+      console.log(posts2);
+      console.log(posts2[i].id);
+      const name_form = posts2[i].name;
+      const email_form = posts2[i].email;
+      const bloodtype_form = posts2[i].bloodtype;
+      const dob_form = posts2[i].dob;
+      const address1_form = posts2[i].address.address1;
+      const address2_form = posts2[i].address.address2;
+      const city_form = posts2[i].address.city;
+      const state_form = posts2[i].address.state;
+      const country_form = posts2[i].address.country;
+      const gender_form = posts2[i].gender;
+      const donated_before_form = posts2[i].donated;
+      const disease_before_form = posts2[i].disease;
+      console.log(name_form);
+      console.log(email_form);
+
+      const content2 = `
+        <div class="donationdiv">
+          <div class="heading">
+              <span class="first">Donation Records</span>
+              <span class="second">&nbsp &nbsp(Details of Last form Filled by this account)</span>
+          </div>
+          <div class="donation-form-display"> 
+            <div class="upper">  
+              <div class="block">
+              <span class="query">Name - </span>
+              <span class="result">${name_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">Email - </span>
+              <span class="result">${email_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">DOB - </span>
+              <span class="result">${dob_form} </span>
+              </div>
+            </div>
+
+            <div class="middle">  
+              <div class="block">
+              <span class="query">Address - </span>
+              <span class="result">${address1_form}, ${address2_form}</span>
+              </div>
+              <div class="block">
+              <span class="query">City - </span>
+              <span class="result">${city_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">State - </span>
+              <span class="result">${state_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">Country - </span>
+              <span class="result">${country_form} </span>
+              </div>
+            </div>
+
+            <div class="lower">  
+              <div class="block">
+              <span class="query">Gender - </span>
+              <span class="result">${gender_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">Has donated Blood before - </span>
+              <span class="result">${donated_before_form} </span>
+              </div>
+              <div class="block">
+              <span class="query">Has some disease before - </span>
+              <span class="result">${disease_before_form} </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+      document.querySelector("#donationdiv").innerHTML = content2;
+    }
+    else{
+      const content2 = `
+        <div class="donationdiv-not-found">
+          <div class="heading">
+              <span class="first">No Donation Records Found</span>
+              <span class="second">&nbsp &nbsp(You haven't Donated with us)</span>
+          </div>
+        </div>
+      `;
+      document.querySelector("#donationdiv").innerHTML = content2;
+    }
   }
 }
 
-if (token) showDetails();
-else {
+if (token) {
+  showDetails();
+  showDonationDetails();
+} else {
   alert("Please Login first to Move on !");
-  window.location.href = "../index.html";
+  window.location.href = "../../index.html";
 }
