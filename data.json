@@ -79,6 +79,42 @@
       "donated": "yes",
       "disease": "no",
       "id": 1
+    },
+    {
+      "name": "Kittu Singh ",
+      "dob": "2004-12-10",
+      "bloodtype": "B+",
+      "email": "kittusinghranchi@gmail.com",
+      "phone": "7003475639",
+      "address": {
+        "address1": "ff",
+        "address2": "ff",
+        "city": "ff",
+        "state": "ff",
+        "country": "ff"
+      },
+      "gender": "Male",
+      "donated": "Yes",
+      "disease": "No",
+      "id": 2
+    },
+    {
+      "name": "hi",
+      "dob": "1100-01-10",
+      "bloodtype": "B+",
+      "email": "kittusinghranchi@gmail.com",
+      "phone": "7003475639",
+      "address": {
+        "address1": "xdazx",
+        "address2": "dsads",
+        "city": "dsadasd",
+        "state": "dasdsada",
+        "country": "sadasd"
+      },
+      "gender": "Male",
+      "donated": "No",
+      "disease": "No",
+      "id": 3
     }
   ]
 }
