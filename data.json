@@ -91,7 +91,6 @@
       "id": 1
     },
     {
-<<<<<<< HEAD
       "name": "ashu",
       "dob": "2003-04-20",
       "bloodtype": "B+",
@@ -108,7 +107,8 @@
       "donated": "no",
       "disease": "no",
       "id": 2
-=======
+    },
+    {
       "name": "Kittu Singh ",
       "dob": "2004-12-10",
       "bloodtype": "B+",
@@ -145,6 +145,24 @@
       "id": 3
     },
     {
+      "name": "Aditya Kumar Dutta",
+      "dob": "2023-07-13",
+      "bloodtype": "A-",
+      "email": "addymistrel@gmail.com",
+      "phone": "7458961234",
+      "address": {
+        "address1": "SIT",
+        "address2": "Bhubaneswar",
+        "city": "Khordha",
+        "state": "Odisha",
+        "country": "India"
+      },
+      "gender": "Male",
+      "donated": "Yes",
+      "disease": "Yes",
+      "id": 4
+    },
+    {
       "name": "xyz",
       "dob": "2004-02-10",
       "bloodtype": "B+",
@@ -161,7 +179,6 @@
       "donated": "No",
       "disease": "No",
       "id": 4
->>>>>>> fd3f136907d2a3abe9ef352cbfe9ed984e3d5d71
     }
   ]
 }
