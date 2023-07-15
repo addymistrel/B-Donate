@@ -35,7 +35,7 @@ submit.addEventListener("click", () => {
     address: adddress.value,
     image_url:
       ppic.value.length === 0
-        ? "../../assets/images/demo_profile_pic.png"
+        ? "../../../../assets/images/demo_profile_pic.png"
         : url11,
   };
 
