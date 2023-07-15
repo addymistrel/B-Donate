@@ -202,12 +202,12 @@ nav img {
 
 .borderCSS {
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: column; 
   gap: 8px;
   margin-left: 7%;
 }
 
-.borderCSS a:before,
+ .borderCSS a:before,
 .borderCSS a:after {
   position: absolute;
   opacity: 0.5;
@@ -216,7 +216,7 @@ nav img {
   content: "";
   background: #fd6969;
   transition: all 0.3s;
-}
+} 
 
 .borderCSS a:before {
   left: 0px;
