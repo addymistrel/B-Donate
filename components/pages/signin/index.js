@@ -64,13 +64,13 @@ submit.addEventListener("click", () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        const item = data.find(
-          (el) => el.email === email.value && el.password === pass.value
-        );
-        console.log(item);
+        // console.log(data);
+        const item = data.find((el) => el.email === email.value);
+        // console.log(item);
         if (item === undefined) {
           alert("User Does Not Exist! Please Create an account");
+        } else if (item.password !== pass.value) {
+          alert("Incorrect Password !");
         } else {
           const token = JSON.stringify(Date.now());
           localStorage.setItem("token", token);
