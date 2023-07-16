@@ -62,11 +62,11 @@ With the ground rules out of the way, let's talk about the coarse architecture o
 
 Here is a list of all the big technologies we use:
 
-- **HTML**: <img  src="./components/assets/images/html.png"  alt="REACT"  width="35"  height="35">
-
-- **CSS**: <img  src="./components/assets/images/css.png"  alt="FIREBASE"  width="30"  height="30">
-
-- **JAVASCRIPT**: <img  src="./components/assets/images/js.png"  alt="FIREBASE"  width="30"  height="30">
+<div align="center">
+      <img  src="./components/assets/images/html.png"  alt="HTML"  width="100"  height="100"/>
+      <img  src="./components/assets/images/css.png"  alt="CSS"  width="100"  height="100"/>
+      <img  src="./components/assets/images/js.png"  alt="Javascript"  width="100"  height="100"/>
+</div>
 
 ### Folder structure
 
