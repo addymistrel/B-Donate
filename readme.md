@@ -323,22 +323,20 @@ For further queries and whereabouts you can communicate and reach out to the own
 
 <br>
 
-<div align="center">
+# How to Run Locally
 
-## Thanks to all Contributors 💪
+## Step - 1
 
-Thanks a lot for spending your time helping dummygram grow. Thanks a lot! Keep rocking 🍻
+### Clone the Repository
 
-[![Contributors](https://contrib.rocks/image?repo=narayan954/dummygram)](https://github.com/narayan954/dummygram/graphs/contributors)
+## Step - 2
 
-## License
+### Run - npm install
 
-**MIT License, see the [LICENSE](./LICENSE) file.**
+## Step - 3
 
-<br>
+### Run - npm run server
 
-<h3><b>Take a moment to star ⭐ the project if you like it</b></h3>
-    <h3>Do checkout the other repos 💫</h3>
+## Step - 4
 
-</div>
-<p align="right">(<a href="#top">Back to top</a>)</p>
+### Open index.html
