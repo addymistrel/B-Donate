@@ -68,6 +68,7 @@ submit.addEventListener("click", (e) => {
     gender: gender,
     donated: donated,
     disease: disease,
+    userId: JSON.parse(localStorage.getItem("id")),
   };
 
   if (

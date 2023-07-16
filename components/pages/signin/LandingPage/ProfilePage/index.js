@@ -84,18 +84,18 @@ async function showDonationDetails() {
   const posts2 = await getDonationDetails();
 
   const posts = await getDetails();
-  var GlobalEmail="";
-  for (var i = 0; i < posts.length; i++) {
-    if (posts[i].id === Localid) {
-      const email = posts[i].email;
-      //console.log(email);
-      GlobalEmail=email;
-      
-    }
-  }
-  
+  // var GlobalEmail="";
+  // for (var i = 0; i < posts.length; i++) {
+  //   if (posts[i].id === Localid) {
+  //     const email = posts[i].email;
+  //     //console.log(email);
+  //     GlobalEmail=email;
+
+  //   }
+  // }
+
   for (var i = 0; i < posts2.length; i++) {
-    if (posts2[i].email === GlobalEmail) {
+    if (posts2[i].userId === Localid) {
       console.log(posts2);
       console.log(posts2[i].id);
       const name_form = posts2[i].name;
@@ -173,8 +173,7 @@ async function showDonationDetails() {
         </div>
       `;
       document.querySelector("#donationdiv").innerHTML = content2;
-    }
-    else{
+    } else {
       const content2 = `
         <div class="donationdiv-not-found">
           <div class="heading">
