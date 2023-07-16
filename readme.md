@@ -66,6 +66,7 @@ Here is a list of all the big technologies we use:
       <img  src="./components/assets/images/html.png"  alt="HTML"  width="100"  height="100"/>
       <img  src="./components/assets/images/css.png"  alt="CSS"  width="100"  height="100"/>
       <img  src="./components/assets/images/js.png"  alt="Javascript"  width="100"  height="100"/>
+      <img  src="./components/assets/images/json.png"  alt="Javascript"  width="100"  height="100"/>
 </div>
 
 ### Folder structure
