@@ -1,19 +1,8 @@
-# Poject Title --> B-DONATE
+# B-DONATE
 
-# How to Run Locally
+## How to Run Locally
 
-## Step - 1
-
-### Clone the Repository
-
-## Step - 2
-
-### Run - npm install
-
-## Step - 3
-
-### Run - json-server --watch data.json --port 8080
-
-## Step - 4
-
-### Open index.html with live server
+1. Clone the Repository
+2. Run - npm install
+3. Run - npm run server
+4. Open index.html with live server
