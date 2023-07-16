@@ -7,6 +7,12 @@ const submit_form = document.getElementById("submit");
 const final_div = document.getElementById("final_reference_div");
 const adddress = document.getElementById("address");
 const ppic = document.getElementById("images");
+const redirect = JSON.parse(localStorage.getItem("redi"));
+
+if (redirect) {
+  window.location.replace("../signin/index.html");
+  localStorage.removeItem("redi");
+}
 
 function isEmail(eemail) {
   for (var i = 0; i < eemail.length; i++)
@@ -66,6 +72,7 @@ submit.addEventListener("click", () => {
             .then((res) => res.json())
             .then(() => {
               alert("Registration SuccessFull! Please Proceed to Login");
+              localStorage.setItem("redi", 123456);
             });
         } else {
           alert(
