@@ -16,8 +16,9 @@ const getDonationDetails = async () => {
   console.log(Localid);
   const response = await fetch(url2);
   const posts2 = await response.json();
+  const item = posts2.find((el) => el.userId === Localid);
   //console.log(posts2);
-  return posts2;
+  return item;
 };
 
 //Working with data
@@ -82,38 +83,23 @@ async function showDetails() {
 
 async function showDonationDetails() {
   const posts2 = await getDonationDetails();
+  if (posts2 !== undefined) {
+    const name_form = posts2.name;
+    const email_form = posts2.email;
+    const bloodtype_form = posts2.bloodtype;
+    const dob_form = posts2.dob;
+    const address1_form = posts2.address.address1;
+    const address2_form = posts2.address.address2;
+    const city_form = posts2.address.city;
+    const state_form = posts2.address.state;
+    const country_form = posts2.address.country;
+    const gender_form = posts2.gender;
+    const donated_before_form = posts2.donated;
+    const disease_before_form = posts2.disease;
+    console.log(name_form);
+    console.log(email_form);
 
-  const posts = await getDetails();
-  // var GlobalEmail="";
-  // for (var i = 0; i < posts.length; i++) {
-  //   if (posts[i].id === Localid) {
-  //     const email = posts[i].email;
-  //     //console.log(email);
-  //     GlobalEmail=email;
-
-  //   }
-  // }
-
-  for (var i = 0; i < posts2.length; i++) {
-    if (posts2[i].userId === Localid) {
-      console.log(posts2);
-      console.log(posts2[i].id);
-      const name_form = posts2[i].name;
-      const email_form = posts2[i].email;
-      const bloodtype_form = posts2[i].bloodtype;
-      const dob_form = posts2[i].dob;
-      const address1_form = posts2[i].address.address1;
-      const address2_form = posts2[i].address.address2;
-      const city_form = posts2[i].address.city;
-      const state_form = posts2[i].address.state;
-      const country_form = posts2[i].address.country;
-      const gender_form = posts2[i].gender;
-      const donated_before_form = posts2[i].donated;
-      const disease_before_form = posts2[i].disease;
-      console.log(name_form);
-      console.log(email_form);
-
-      const content2 = `
+    const content2 = `
         <div class="donationdiv">
           <div class="heading">
               <span class="first">Donation Records</span>
@@ -172,9 +158,9 @@ async function showDonationDetails() {
           </div>
         </div>
       `;
-      document.querySelector("#donationdiv").innerHTML = content2;
-    } else {
-      const content2 = `
+    document.querySelector("#donationdiv").innerHTML = content2;
+  } else {
+    const content2 = `
         <div class="donationdiv-not-found">
           <div class="heading">
               <span class="first">No Donation Records Found</span>
@@ -182,8 +168,7 @@ async function showDonationDetails() {
           </div>
         </div>
       `;
-      document.querySelector("#donationdiv").innerHTML = content2;
-    }
+    document.querySelector("#donationdiv").innerHTML = content2;
   }
 }
 
