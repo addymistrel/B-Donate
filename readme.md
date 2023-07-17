@@ -1,4 +1,4 @@
-<div id="top"></div>
+![image](https://github.com/addymistrel/B-Donate/assets/102992848/98ebd4cf-bfdb-4724-93d6-4aef3a7c6c1f)<div id="top"></div>
 <div align="center">
 
 <img  src="./components/assets/images/logo.png"  alt="B-donate"  height="150">
@@ -153,6 +153,14 @@ Facing Difficulty on running with live server [VISIT](https://youtu.be/y4qqQeUDC
 ## B-Donate Workflow
 
 <img src='./components/assets/images/workflow.png' width='920'>
+
+## Screenshots
+<img src='./components/assets/images/landing_page.png' width='920'>
+<img src='./components/assets/images/signup_page.png' width='920'>
+<img src='./components/assets/images/signin_page.png' width='920'>
+<img src='./components/assets/images/userdetails_page.png' width='920'>
+<img src='./components/assets/images/profile_page.png' width='920'>
+<img src='./components/assets/images/donation_form.png' width='920'>
 
 ## Feedback
 
