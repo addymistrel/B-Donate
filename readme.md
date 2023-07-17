@@ -167,11 +167,11 @@ If you have any feedback or suggestions please reach out to the Project-Maintain
 
 <div align="center">
 
-## Thanks to all Contributors 💪
+## Thanks to all Collaborators 💪
 
 Thanks a lot for spending your time helping B-Donate grow. Thanks a lot! Keep rocking 🍻
 
-[![Contributors](https://contrib.rocks/image?repo=addymistrel/B-Donate)](https://github.com/addymistrel/B-Donate/graphs/contributors)
+[![Collaborators](https://contrib.rocks/image?repo=addymistrel/B-Donate)](https://github.com/addymistrel/B-Donate/graphs/contributors)
 
 <div align="left">
 For further queries and whereabouts you can communicate and reach out to the owner through <a href="https://www.linkedin.com/in/addymistrel/">Linkedin</a> & <a href="https://mail.google.com/mail/u/0/#inbox">email</a>
