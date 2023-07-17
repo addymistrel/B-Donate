@@ -152,7 +152,7 @@ Facing Difficulty on running with live server [VISIT](https://youtu.be/y4qqQeUDC
 
 ## B-Donate Workflow
 
-<img src='https://docs.cypress.io/img/guides/overview/v10/real-world-app.png' width='920'>
+<img src='./components/assets/images/workflow.png' width='920'>
 
 ## Feedback
 
