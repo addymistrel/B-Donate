@@ -1,4 +1,4 @@
-![image](https://github.com/addymistrel/B-Donate/assets/102992848/98ebd4cf-bfdb-4724-93d6-4aef3a7c6c1f)<div id="top"></div>
+
 <div align="center">
 
 <img  src="./components/assets/images/logo.png"  alt="B-donate"  height="150">
