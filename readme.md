@@ -139,15 +139,20 @@ To Start the json-server for Backend run
 ```sh
 npm run server
 ```
-Then 
+
+Then
+
 ```
 Run index.html in "root" folder on live server through vs code
 ```
 
 Facing Difficulty on running with live server [VISIT](https://youtu.be/y4qqQeUDCBQ)
+
 <div  align="center"><img  height="200px"  src="https://user-images.githubusercontent.com/77617189/192947926-37284128-9965-46a4-b29b-c75e47b2f76b.svg" /></div>
 
 ## B-Donate Workflow
+
+<img src='https://docs.cypress.io/img/guides/overview/v10/real-world-app.png' width='920'>
 
 ## Feedback
 
