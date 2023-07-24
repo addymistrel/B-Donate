@@ -51,8 +51,6 @@ document.querySelector("#submit").addEventListener("focus", function (e) {
 const email = document.getElementById("email");
 const pass = document.getElementById("password");
 const submit = document.getElementById("submit");
-const red = JSON.parse(localStorage.getItem("redirect"));
-const redirect = JSON.stringify(Date.now());
 
 submit.addEventListener("click", () => {
   localStorage.removeItem("token");
@@ -64,26 +62,18 @@ submit.addEventListener("click", () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
-        const item = data.find((el) => el.email === email.value);
-        // console.log(item);
+        console.log(data);
+        const item = data.find(
+          (el) => el.email === email.value && el.password === pass.value
+        );
+        console.log(item);
         if (item === undefined) {
           alert("User Does Not Exist! Please Create an account");
-        } else if (item.password !== pass.value) {
-          alert("Incorrect Password !");
         } else {
           const token = JSON.stringify(Date.now());
           localStorage.setItem("token", token);
-          localStorage.setItem("id", item.id);
-          if (red) {
-            window.location.replace("../Donation_Form/index.html");
-            localStorage.removeItem("redirect");
-          } else window.location.href = "./LandingPage/index.html";
+          window.location.href = "./LandingPage/index.html";
         }
       });
   }
-});
-
-document.getElementById("donate").addEventListener("click", () => {
-  localStorage.setItem("redirect", redirect);
 });
